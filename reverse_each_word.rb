@@ -7,4 +7,11 @@ def reverse_each_word(string)
  array.join(" ")
 end
 
-def reverse_each_word()
+def reverse_each_word(string)
+ new_array = string.split(" ")
+ array = []
+ new_array.collect {|string|
+   array.push(string.reverse)
+ }
+ array.join(" ")
+end
